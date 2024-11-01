@@ -1,10 +1,10 @@
 
 .navbarcolorstyle{
 
-    background-color: #009668;
+    background-color: #4B0082;
   }
   #navbarcolorstyle{
-  background-color: #009668;
+  background-color: #4B0082;
   }
   
   #textstyle{
@@ -31,12 +31,12 @@
   
   
   #offcanvasNavbarDropdown{
-    background-color: #009668;
+    background-color: #4B0082;
     color: white;
     font-family: "Source Sans Pro", "Arial", sans-serif;
   }
   #dropdownitemcolor{
-    background-color: #009668;
+    background-color: #4B0082;
     color: white;
     font-family: "Source Sans Pro", "Arial", sans-serif;
   }
@@ -53,7 +53,7 @@
     border-radius: 5px;
     margin-right: 20px;
     margin-top: 20px;
-    color: black;
+    color: white;
     font-size: 20px;
     font-weight: bold;
   }
@@ -70,6 +70,28 @@
         }
   }
 
+  /* Hide the submenu by default */
+  .dropdown-submenu .dropdown-menu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    margin-top: -5px;
+  }
+  
+  /* Show the submenu on hover */
+  .dropdown-submenu:hover .dropdown-menu {
+    display: block;
+  }
+  
+  /* Optional styling */
+  .dropdown-submenu {
+    position: relative;
+  }
+  body{
+    background-color: #333333c9 !important;
+  }
+  
   /*--------------------------------------------------------------------------*/
 /* Full-screen loader container */
 #loading {
@@ -78,7 +100,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #00ffff; /* Background color during loading */
+  background-color: #1a1f36; /* Background color during loading */
   z-index: 9999;
   display: flex;
   justify-content: center;
@@ -97,10 +119,116 @@ body {
  /* overflow: hidden; /* Prevent scrolling */
 }
 
+#loading img {
+  animation: speed-up 6s infinite linear; /* Adjust the time for speed */
+}
+
+/* Keyframes for speed */
+@keyframes speed-up {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
 
 /*-----------first section css-----------------------------------------------------------------*/
+.header-section {
+  margin-top: 72px;
+  width: 100%;
+  height: 420px;
+  background-image: url(images/tangi\ bg\ image.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
 
-#bg_img_first{
+.content-wrapper {
+  position: absolute;
+  left: 50px;
+  top: 50px;
+  color: white;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.main-heading {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation: fadeIn 1s ease-in;
+}
+
+.sub-content {
+  font-size: 1.1em;
+  line-height: 1.5;
+  animation: slideIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-50px); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+@media (max-width: 600px) {
+ .main-heading{
+  margin-top: 200px;
+  text-align: center !important;
+  font-size: 2em;
+ }
+ .sub-content{
+  font-size: 1em;
+  text-align: center;
+ }
+
+  .logo {
+      display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .main-heading{
+    font-size: 1.8em;
+   }
+
+   .sub-content{
+    font-size: 0.8em;
+    text-align: center;
+   }
+}
+
+@media (max-width: 420px) {
+  .main-heading{
+    font-size: 1.7em;
+   }
+
+   .sub-content{
+    font-size: 0.8em;
+    text-align: center;
+   }
+}
+
+@media (max-width: 400px) {
+  .main-heading{
+    font-size: 1.6em;
+   }
+
+   .sub-content{
+    font-size: 0.6em;
+    text-align: center;
+   }
+}
+/*#bg_img_first{
   border: 1px solid black;
   width: 100%;
   height: 400px;
@@ -225,7 +353,7 @@ body {
     
   }
 
-}
+}*/
 
 /* ------------second section css start -----------------------------------*/
 .glowing-border {
@@ -233,7 +361,7 @@ body {
   width: 100%;
   border-radius: 10px;
   border: 2px solid transparent;
-  background: linear-gradient(45deg, #ff00ff46, #00ffff36, #ff00ff3a);
+  
   background-size: 200% 200%;
   animation: gradientAnimation 5s ease infinite;
   display: flex;
@@ -245,10 +373,10 @@ body {
 
 .glowing-border span {
   font-size: 60px;
-  color: #212121;
+  color: #00ffff;
   font-weight: bold;
-  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
-  animation: glowAnimation 1.5s ease-in-out infinite alternate;
+  text-shadow: 0 0 5px #00b3b3, 0 0 10px #008080, 0 0 15px #005757;
+
 }
 
 @keyframes gradientAnimation {
@@ -322,14 +450,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e6f3ff; /* Light blue background */
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
 }
 .glowing-text {
   font-family:'Times New Roman', Times, serif;
   font-size: 25px;
   line-height: 2;
   text-align: center;
-  color: #212121; /* Dark blue text color */
+  color: white; /* Dark blue text color */
   /*text-shadow: 0 0 10px #66b3ff, 0 0 20px #66b3ff, 0 0 30px #66b3ff;*/
   animation: glow 1.5s ease-in-out infinite alternate;
 }
@@ -411,8 +540,10 @@ body {
 .section_body{
   padding-top: 5px;
   height:650px;
-  background-color: #4158D0;
-background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+ /* background-color: #4158D0;*/
+ background: linear-gradient(to right, #333333c9, #0056b3c9);
+
+
 }
 .main_body_section {
   display: grid;
@@ -426,14 +557,15 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   background:#fff;
 }
 .section_heading_css{
-  font-size: 42px;
+  font-size: 50px;
   font-weight:700;
+  font-family:'Times New Roman', Times, serif;
   line-height: 1.2;
   color:#000000;
 }
 .section_text{
   font-size:18px;
-  line-height:1.3;
+  line-height:1.9;
   
 }
 
@@ -476,55 +608,55 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 
 @media (max-width: 750px) {
   .section_body{
-    height: 850px;
+    height: 780px;
   }
 }
 
 @media (max-width: 635px) {
   .section_body{
-    height: 860px;
+    height: 760px;
   }
 }
 
 @media (max-width: 540px) {
   .section_body{
-    height: 870px;
+    height: 780px;
   }
 }
 
 @media (max-width: 530px) {
   .section_body{
-    height: 890px;
+    height: 800px;
   }
 }
 
-@media (max-width: 475px) {
+@media (max-width: 480px) {
   .section_body{
-    height: 900px;
+    height: 780px !important;
   }
 }
 
 @media (max-width: 470px) {
   .section_body{
-    height: 950px;
+    height: 850px;
   }
 }
 
 @media (max-width: 460px) {
   .section_body{
-    height: 970px;
+    height: 870px;
   }
 }
 
 @media (max-width: 423px) {
   .section_body{
-    height: 990px;
+    height: 1000px;
   }
 }
 
 @media (max-width: 407px) {
   .section_body{
-    height: 1000px;
+    height: 860px !important;
   }
 }
 
@@ -555,7 +687,68 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
 /*  section three  css-----------------------------------------------------------------
 ------------------------------------------------------------------------------------------*/
 
-.section3_body {
+#container_section3 {
+  width: 100%;
+  height: 300px;
+  background-color: #f0f8ff; /* Light background color */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+#heading_section3{
+font-size: 50px !important;
+font-family:Arial, Helvetica, sans-serif;
+}
+#content_section3{
+  font-size: 20px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+.custom-heading, .content_section3 {
+  opacity: 0; /* Start hidden */
+  transform: translateY(20px); /* Start slightly below */
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out; /* Transition for animation */
+  text-align: center;
+}
+.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Move to original position */
+}
+
+@media (max-width: 700px) {
+  #heading_section3{
+    font-size: 40px !important;
+  }
+
+  #content_section3{
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+}
+@media (max-width: 450px) {
+  #heading_section3{
+    font-size: 35px !important;
+  }
+
+  #content_section3{
+    font-size: 14px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+}
+@media (max-width: 400px) {
+  #heading_section3{
+    font-size: 35px !important;
+  }
+
+  #content_section3{
+    font-size: 12px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+}
+
+/*.section3_body {
   font-family: Arial, sans-serif;
   background-color: #f0f0f0;
   display: flex;
@@ -628,7 +821,7 @@ background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
   .section3_body {
     height: 800px;
   }
-}
+}*/
 
 
 /*---Footer css--------------------------------------------------------------------------

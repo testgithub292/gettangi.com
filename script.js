@@ -34,3 +34,31 @@ document.addEventListener("DOMContentLoaded", function() {
         document.body.scrollTop = 0; // Pro Safari
         document.documentElement.scrollTop = 0; // Pro Chrome, Firefox, IE a Opera
     }
+
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const incentivesDropdown = document.querySelector('.dropdown-submenu');
+    
+        incentivesDropdown.addEventListener('click', function (e) {
+            e.stopPropagation(); // Prevents the dropdown from closing
+        });
+    });
+    
+
+
+
+     // Function to handle intersection
+        const handleIntersection = (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible'); // Add visible class to trigger animation
+                }
+            });
+        };
+
+        // Create an intersection observer
+        const observer = new IntersectionObserver(handleIntersection);
+
+        // Observe the heading and content
+        observer.observe(document.getElementById('heading_section3'));
+        observer.observe(document.getElementById('content_section3'));
