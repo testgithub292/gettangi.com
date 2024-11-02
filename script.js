@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Při kliknutí na tlačítko se přesune na začátek stránky
+    /*// Při kliknutí na tlačítko se přesune na začátek stránky
     scrollTopBtn.onclick = function() {
         document.body.scrollTop = 0; // Pro Safari
         document.documentElement.scrollTop = 0; // Pro Chrome, Firefox, IE a Opera
@@ -42,7 +42,7 @@ document.addEventListener("DOMContentLoaded", function() {
         incentivesDropdown.addEventListener('click', function (e) {
             e.stopPropagation(); // Prevents the dropdown from closing
         });
-    });
+    });*/
     
 
 
