@@ -29,14 +29,14 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    /*// Při kliknutí na tlačítko se přesune na začátek stránky
+    // Při kliknutí na tlačítko se přesune na začátek stránky
     scrollTopBtn.onclick = function() {
         document.body.scrollTop = 0; // Pro Safari
         document.documentElement.scrollTop = 0; // Pro Chrome, Firefox, IE a Opera
     }
 
 
-    document.addEventListener("DOMContentLoaded", function () {
+    /*document.addEventListener("DOMContentLoaded", function () {
         const incentivesDropdown = document.querySelector('.dropdown-submenu');
     
         incentivesDropdown.addEventListener('click', function (e) {
