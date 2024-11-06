@@ -1,6 +1,6 @@
 
 
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
     // Display loading animation for 2 seconds
     setTimeout(function() {
         // Hide loading animation and show content
@@ -8,9 +8,47 @@ document.addEventListener("DOMContentLoaded", function() {
         //document.getElementById('content').style.display = 'block';
         document.body.style.overflow = 'auto'; // Enable scrolling after loading
     }, 2000); // Set delay to 2 seconds (2000 ms)
+});*/
+
+/*document.addEventListener("DOMContentLoaded", function() {
+    // Check if the modal has already been shown
+    if (!localStorage.getItem("modalShown")) {
+        // Display loading animation for 2 seconds
+        setTimeout(function() {
+            // Hide loading animation and show content
+            document.getElementById('loading').style.display = 'none';
+            document.body.style.overflow = 'auto'; // Enable scrolling after loading
+            
+            // Show the Bootstrap modal
+            var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {
+                keyboard: true
+            });
+            myModal.show();
+
+            // Set a flag in localStorage to indicate the modal has been shown
+            localStorage.setItem("modalShown", "true");
+        }, 2000); // Set delay to 2 seconds (2000 ms)
+    } else {
+        // Hide loading animation immediately if modal has already been shown
+        document.getElementById('loading').style.display = 'none';
+        document.body.style.overflow = 'auto';
+    }
+});*/
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Display loading animation for 2 seconds
+    setTimeout(function() {
+        // Hide loading animation and show content
+        document.getElementById('loading').style.display = 'none';
+        document.body.style.overflow = 'auto'; // Enable scrolling after loading
+
+        // Trigger Bootstrap modal
+        var myModal = new bootstrap.Modal(document.getElementById('exampleModal'), {
+            keyboard: true
+        });
+        myModal.show();
+    }, 2000); // Set delay to 2 seconds (2000 ms)
 });
-
-
 
 //-------------------------------------------------------------------------------------------
 //-------------------------------------------------------------------------------------------
@@ -62,3 +100,14 @@ document.addEventListener("DOMContentLoaded", function() {
         // Observe the heading and content
         observer.observe(document.getElementById('heading_section3'));
         observer.observe(document.getElementById('content_section3'));
+
+
+
+
+        /*-------------------------------------------*/
+         // JavaScript to stop the video when modal is closed
+  document.getElementById('exampleModal').addEventListener('hidden.bs.modal', function () {
+    var video = document.getElementById('modalVideo');
+    video.pause();
+    video.currentTime = 0; // Optional: Reset video to the beginning
+  });

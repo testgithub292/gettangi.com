@@ -93,6 +93,40 @@
   }
   
   /*--------------------------------------------------------------------------*/
+
+
+  /* ----------video start-----------------------------------------------------*/
+
+    .modal-header{
+      background-color:#32496881;
+      color: white;
+    }
+    .modal-body{
+      background-color:#32496881;
+    }
+    .modal-footer{
+      background-color:#32496881 !important;
+    }
+    
+      /* Make the video responsive */
+      .video-container {
+        position: relative;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio */
+        overflow: hidden;
+        border-radius: 10px;
+      }
+      .video-container video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      /*------------------------------------------------------*/
+      /*-------------------------------------------------------------------*/
 /* Full-screen loader container */
 #loading {
   position: fixed;
@@ -1047,8 +1081,9 @@ article img {
 }
 
 .article-body {
-  padding: 24px;
+  padding: 20px;
 }
+
 
 article a {
   display: inline-flex;
@@ -1091,9 +1126,9 @@ Generic layout (demo looks)
   display: grid;
   max-width: 1200px;
   margin-inline: auto;
-  padding-inline: 24px;
+  padding-inline: 10px;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 100px;
+  gap: 25px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
