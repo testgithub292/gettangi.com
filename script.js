@@ -111,3 +111,7 @@ document.addEventListener("DOMContentLoaded", function() {
     video.pause();
     video.currentTime = 0; // Optional: Reset video to the beginning
   });
+
+
+
+ 
