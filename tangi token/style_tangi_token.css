@@ -509,7 +509,7 @@
   background-color:#e6e6e6;
 }
 .section { 
-  padding: 20px;
+  padding: 5px;
   margin: 20px 0;
   transition: transform 0.5s, opacity 0.5s;
   opacity: 0;
@@ -526,3 +526,89 @@ h2 {
 p {
   font-size: 18px;
 }
+
+
+/*-----------rewaded page -----css start -----------------------------------------
+----------------------------------------------------------------------------
+-----------------------------------------------------------------------------
+--------------------------------------------------------------------------*/
+
+.rewaded_first_section {
+  margin: 0;
+  height: 450px;
+  margin-top: 72px;
+}
+.rewad-responsive-container {
+  width: 100%;
+ height: 450px;
+  border: 2px solid black;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: hidden;
+  background: linear-gradient(135deg, #c29edb 20%, #e8d8f2 40%, #ffffff 50%, #e8d8f2 60%, #c29edb 80%);
+
+  color: black;
+  /*background: linear-gradient(to bottom, #ff7e5f, #feb47b);*/
+}
+.rewad-responsive-logo {
+  position: absolute;
+  top: 10px;
+  /*max-width: 100%;*/
+  height: auto;
+}
+.rewad-left-logo {
+  margin-top: 30px;
+  left: 10px;
+  width: 120px;
+}
+.rewad-right-logo {
+  margin-top: 30px;
+  right: 10px;
+  width: 120px;
+}
+
+.rewad-big-bold-text_line2{
+  font-size: 25px;
+}
+.rewad-animated-content {
+  text-align: center;
+  animation: rewad-slideInFromBottom 2s;
+  transform: translateY(100%);
+  padding: 0 20px;
+}
+.rewad-big-bold-text {
+  font-size: 25px;
+  font-weight: bold;
+}
+@media (max-width: 600px) {
+  .rewad-big-bold-text {
+      font-size: 25px;
+      font-weight: bold;
+  }
+  .rewad-big-bold-text_line2{
+    font-size: 20px;
+  }
+
+}
+
+@media (max-width: 440px) {
+  .rewad-big-bold-text {
+      font-size: 20px;
+      font-weight: bold;
+  }
+  .rewad-big-bold-text_line2{
+    font-size: 16px;
+  }
+
+}
+@keyframes rewad-slideInFromBottom {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+
+/* section 2 ---------------------------------------------------*/

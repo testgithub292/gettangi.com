@@ -41,3 +41,8 @@ scrollTopBtn.onclick = function() {
   sections.forEach(section => {
       observer.observe(section); // Observe each section
   });
+
+
+  /*---second section 2-------------------------------------------------------------*/
+
+  
