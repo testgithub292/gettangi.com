@@ -982,7 +982,7 @@ h1 {
   color: #28a745; /* Green color for tick */
 }
 #infoParagraphbg{
-  padding: 10px;
+  padding: 10px 40px;
   background-color: #e6e6e6;
 }
 .info-paragraph {
@@ -1004,7 +1004,7 @@ h1 {
 
   .info-paragraph {
     text-align: left;
-    padding: 15px;
+    padding: 15px 0px;
   }
 }
 
