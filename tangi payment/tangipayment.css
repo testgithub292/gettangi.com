@@ -584,3 +584,266 @@ h2 {
 p {
   font-size: 18px;
 }
+
+
+
+/*-------how it work css start --------------------------------------------------------
+-------------------------------------------------------------------------
+---------------------------------------------------------------------------------------*/
+
+
+
+/* styles.css */
+#first_sectionps {
+  margin-top: 72px;
+  width: 100%;
+  height: 400px;
+  background: linear-gradient(135deg, #6111b8, #2574fc4f); /* Gradient background */
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  position: absolute;
+  left: 10px; /* Adjust as needed */
+  top: 30%;
+  transform: translateY(-50%);
+  z-index: 1; /* Content above images */
+  color: white; /* Text color changed to white */
+  font-size: 22px; /* Increased text size */
+}
+
+h1 {
+  margin: 0; /* Remove default margin */
+}
+
+.shortcontentps {
+  opacity: 0; /* Start hidden */
+  animation: slideIn 0.5s forwards; /* Slide in animation for paragraph only */
+}
+
+/* Animation for text sliding in */
+@keyframes slideIn {
+  0% {
+      transform: translateX(-100%); /* Start from left */
+      opacity: 0; /* Start hidden */
+  }
+  100% {
+      transform: translateX(0); /* End at original position */
+      opacity: 1; /* Fully visible */
+  }
+}
+
+.images {
+  position: absolute;
+  z-index: 0; /* Images behind content */
+}
+
+.logo {
+  width: 100px;
+  border-radius: 50%; /* Makes images circular */
+  transition: all 0.5s ease; /* Transition effect for both logos */
+}
+
+/* Positioning logo1 at a fixed position */
+.logo1 {
+  position: absolute;
+  top: 30%; /* Adjust as needed */
+  left: 20%; /* Adjust as needed */
+  z-index: 2; /* Ensure logo1 is above the text */
+  animation: rotate 5s linear infinite; /* Rotating animation for logo1 */
+}
+
+/* Logo2 will move with mouse */
+.logo2 {
+  position: absolute;
+  z-index: 0; /* Ensure logo2 is below logo1 and text */
+  animation: rotate 5s linear infinite; /* Rotating animation for logo2 */
+}
+
+/* Keyframes for rotating images */
+@keyframes rotate {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+
+@media (max-width: 850px) {
+
+  .shortcontentps{
+    font-size: 15px;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .shortcontentps{
+    font-size: 12px;
+  }
+}
+
+.tehproblemhead{
+  text-align: center;
+  font-size: 45px;
+  font-weight: bold;
+  text-decoration: underline;
+  margin-bottom: 40px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tehproblemhead:hover{
+  color: #6111b8;
+  text-decoration: none;
+}
+
+
+/*------------------------------*/
+
+
+
+
+
+#section2_container_css {
+  min-height: 300px;
+  width: 100%;
+  border: 2px solid #333;
+  display: flex;
+  overflow: hidden;
+  border: hidden;
+}
+.text-section {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.2);
+}
+.glowing-text {
+  font-family:'Times New Roman', Times, serif;
+  font-size: 25px;
+  line-height: 2;
+  text-align: center;
+  color: white; /* Dark blue text color */
+  /*text-shadow: 0 0 10px #66b3ff, 0 0 20px #66b3ff, 0 0 30px #66b3ff;*/
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  from {
+      text-shadow: 0 0 5px #36404988, 0 0 10px #6077517a, 0 0 15px #66ff6e50;
+  }
+  to {
+      text-shadow: 0 0 10px #6a6f748c, 0 0 20px #57657269, 0 0 30px #9eff6675;
+  }
+}
+.image-section {
+  flex: 1;
+  overflow: hidden;
+}
+.image-section img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+}
+.image-section img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1000px) {
+  #section2_container_css {
+      flex-direction: column;
+      height: auto;
+  }
+  .text-section, .image-section {
+      width: 100%;
+  }
+  .text-section {
+      min-height: 150px;
+  }
+  .image-section {
+      height: 300px;
+  }
+  .image-section img {
+      height: 300px;
+  }
+}
+
+@media (max-width: 730px) {
+  .glowing-text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 550px) {
+  .token_sale_info{
+    font-size: 40px;
+  }
+  .glowing-text {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 450px) {
+  
+  .glowing-text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 350px) {
+  
+  .glowing-text {
+    font-size: 14px;
+  }
+}
+
+
+
+/* section 2 ------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------*/
+
+/*body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #f0f0f0, #e0e0e0);
+  margin: 0;
+  padding: 20px;
+}*/
+#section2 {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px solid #333;
+  padding: 20px;
+  margin: 0px auto;
+  max-width: 100%; /* Responsive max width */
+  /*background: white; /* Background for the container */
+  border: hidden;
+  color: black;
+  background-color:#e6e6e6;
+}
+.section { 
+  padding: 5px;
+  margin: 20px 0;
+  transition: transform 0.5s, opacity 0.5s;
+  opacity: 0;
+  transform: translateX(-100px); /* Start from the left */
+}
+.section.visible {
+  opacity: 1;
+  transform: translateX(0); /* Move to original position */
+}
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+p { 
+  font-size: 18px;
+}
+
+

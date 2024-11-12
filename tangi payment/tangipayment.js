@@ -41,3 +41,9 @@
   sections.forEach(section => {
       observer.observe(section); // Observe each section
   });
+
+
+
+
+
+
