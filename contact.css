@@ -539,7 +539,7 @@ color: var(--color);
   border-image-width: initial;
   border-image-outset: initial;
   border-image-repeat: initial;
-  background-color: #212223;
+  background-color: white;
   padding: 1px 12.5px 1px 22.5px;
 }
 
@@ -555,7 +555,7 @@ color: var(--color);
   padding-right: 22px;
   padding-bottom: 22px;
   padding-left: 22px;
-  background-color: #212223;
+  background-color: white;
   border-top-width: 1px;
   border-right-width: 1px;
   border-bottom-width: 1px;

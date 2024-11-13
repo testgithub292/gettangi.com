@@ -549,14 +549,11 @@ h1 {
   color: white; /* Sets the icon color to white */
   text-decoration: none; /* Removes underline from the link */
   background-color: white;
-  border-radius: 5px;
+  border-radius: 25px;
  /* margin: 5px 0px;*/
 }
 
-#linkedin-icon:hover {
-  color: white; /* Changes color to LinkedIn blue on hover */
 
-}
     .profile-cards {
       display: flex;
       flex-wrap: wrap;
@@ -710,7 +707,6 @@ h1 {
 
     .our-team .social li a:hover {
       color: #1369ce;
-      background-color: #f7f5ec;
     }
     @media (max-width: 768px) {
       .card {
