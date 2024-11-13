@@ -8,22 +8,22 @@
   }
   
   #textstyle{
-    font-size: 18px;
+    font-size: 17px;
     color: white;
     font-family: "Source Sans Pro", "Arial", sans-serif;
   }
   #accountDropdown{
-    font-size: 18px;
+    font-size: 17px;
   color: white;
   font-family: "Source Sans Pro", "Arial", sans-serif;
   }
   #servicesDropdown{
-    font-size: 18px;
+    font-size: 17px;
   color: white;
   font-family: "Source Sans Pro", "Arial", sans-serif;
   }
   #navbarDropdown{
-    font-size: 18px;
+    font-size: 17px;
     color: white;
     text-decoration: none;
     font-family: "Source Sans Pro", "Arial", sans-serif;
@@ -45,6 +45,10 @@
     border-radius: 3px;
     
   }
+
+
+
+
   
   .nav-link.dropdown-toggle::after {
       display: none;
@@ -55,7 +59,7 @@
    padding-bottom: 3px;
    padding-left: 10px;
    padding-right: 10px;
-    margin-right: 20px;
+    margin-right: 0px;
     margin-top: 20px;
     --color: white;
   
@@ -66,7 +70,7 @@
   border: 2px solid #ffd700;
   transition: color 0.5s;
   z-index: 1;
-  font-size: 17px;
+  font-size: 15px;
   border-radius: 20px;
   font-weight: 500;
   color: var(--color);
