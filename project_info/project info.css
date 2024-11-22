@@ -446,7 +446,7 @@
 /* pragraph ----------------------------------*/
 
 #infoParagraphbg{
-    margin-top: 100px;
+    margin-top: 20px;
     padding: 10px 40px;
     background-color: #e6e6e6;
   }
@@ -862,4 +862,21 @@ p {
       width: 300px;
       height: 220px;
     }  
+}
+
+
+/* ----body hearder start -------------------*/
+.bodyheader{
+  border: 1px solid black;
+  height: 200px;
+  margin-top: 72px;
+  border: hidden;
+  text-align: center;
+  padding-top: 15px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc, #7ed56f);
+}
+.bodyheadertext{
+  color: white;
+  font-size: 25px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
