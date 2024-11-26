@@ -53,7 +53,13 @@
   .nav-link.dropdown-toggle::after {
       display: none;
   }
+  .bytokenbtnnav2{
+      display: none !important;
+  }
 
+  .bytokenbtnnav{
+    margin-right: 15px !important;
+  }
  
   #contact_bt_css{
     height: fit-content;
@@ -110,11 +116,16 @@
   
  
   
-  @media (max-width: 992px) {
+  @media (max-width: 1200px) {
   
       .navbar-toggler {
          color: white !important;
         }
+
+        .bytokenbtnnav2{
+          display: block !important;
+        margin-bottom: 10px;
+      }
   }
 
   /* Hide the submenu by default */
@@ -264,18 +275,25 @@ body {
 }
 
 @media (max-width: 600px) {
+ 
  .main-heading{
-  margin-top: 200px;
-  text-align: center !important;
+  margin-top: 20px;
+  
   font-size: 2em;
  }
  .sub-content{
-  font-size: 1.2em;
-  text-align: center;
+  margin-top: 150px;
+  font-size: 1.5em;
  }
 
   .logo {
       display: none;
+  }
+  .content-wrapper {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    color: white;
   }
 }
 
@@ -285,9 +303,15 @@ body {
    }
 
    .sub-content{
-    font-size: 1em;
+    font-size: 20px;
     text-align: center;
    }
+   .content-wrapper {
+    position: absolute;
+    left: 30px;
+    top: 50px;
+    color: white;
+  }
 }
 
 @media (max-width: 420px) {
@@ -296,7 +320,7 @@ body {
    }
 
    .sub-content{
-    font-size: 0.9em;
+    font-size: 1em;
     text-align: center;
    }
 }
@@ -307,7 +331,7 @@ body {
    }
 
    .sub-content{
-    font-size: 0.8em;
+    font-size: 1em;
     text-align: center;
    }
 }

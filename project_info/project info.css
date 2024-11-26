@@ -880,3 +880,79 @@ p {
   font-size: 25px;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+
+#compareable_projectbg{
+
+  background: linear-gradient(135deg, #c29edb 20%, #e8d8f2 40%, #bcc2d3 50%, #e8d8f2 60%, #c29edb 80%);
+}
+
+#bgshortversion{
+  background: linear-gradient(135deg, #c29edb 20%,  #bcc2d3 50%, #e8d8f2 60%, #a280b9 80%)
+}
+
+#bgundes{
+  background: linear-gradient(135deg, #9a73b6 20%,  #bcc2d3 50%, #e8d8f2 60%)
+
+}
+#bgourlegal{
+  background: linear-gradient(135deg, #9a73b6 20%,  #bcc2d3 50%, #9175a1 60%)
+
+}
+
+#bgroletoken{
+
+  background: linear-gradient(135deg, #c29edb 20%, #e8d8f2 40%, #bcc2d3 50%, #e8d8f2 60%, #c29edb 80%);
+
+}
+
+#bgilegalcom{
+  background: linear-gradient(135deg, #c29edb 20%,  #bcc2d3 50%, #e8d8f2 60%, #a280b9 80%)
+
+}
+
+#thelegalbg{
+  background: linear-gradient(to right, #4c008256, #7A33A8, #C29EDB);
+}
+
+#bgourleverage{
+  background: linear-gradient(135deg, #9a73b6 20%,  #bcc2d3 50%, #9175a1 60%)
+}
+
+#bgexpected{
+  background: linear-gradient(135deg, #c29edb 20%, #e8d8f2 40%, #bcc2d3 50%, #e8d8f2 60%, #c29edb 80%);
+
+}
+
+#bgmarkettest{
+  background: linear-gradient(135deg, #9a73b6 20%,  #bcc2d3 50%, #9175a1 60%)
+}
+
+#bgmarketoper{
+  background: linear-gradient(135deg, #9a73b6 20%,  #bcc2d3 50%, #e8d8f2 60%)
+}
+
+#bgteam{
+  background: linear-gradient(135deg, #c29edb 20%,  #bcc2d3 50%, #e8d8f2 60%, #a280b9 80%)
+}
+
+#bgthesolution{
+  background: linear-gradient(135deg, #c29edb 20%,  #bcc2d3 50%, #e8d8f2 60%, #a280b9 80%) 
+}
+
+#bgproblem{
+  background: linear-gradient(135deg, #9a73b6 20%,  #bcc2d3 50%, #9175a1 60%)
+}
+
+
+#bgstory{
+  background: linear-gradient(to right, #4c008256, #7A33A8, #C29EDB);
+}
+
+#riskmangement{
+  background: linear-gradient(135deg, #9a73b6 20%,  #bcc2d3 50%, #9175a1 60%)
+}
+
+#bgadventage{
+  background: linear-gradient(135deg, #9a73b6 20%,  #bcc2d3 50%, #9175a1 60%)
+}
