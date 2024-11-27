@@ -443,7 +443,7 @@
   }
   
 
-/* pragraph ----------------------------------*/
+/* pragraph ---------------------------------*/
 
 #infoParagraphbg{
     margin-top: 20px;
@@ -477,7 +477,7 @@
 
   .googledrivelink{
     text-align: center !important;
-    margin-top: 80px;
+    margin-top: 10px;
     margin-bottom: 20px;
   }
 
@@ -494,7 +494,7 @@
 }
 
 
-
+ 
 
 /* so far so good------------------------------------------------------------ */
 
@@ -955,4 +955,46 @@ p {
 
 #bgadventage{
   background: linear-gradient(135deg, #9a73b6 20%,  #bcc2d3 50%, #9175a1 60%)
+}
+
+
+
+
+/* section 2 ------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------*/
+
+/*body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #f0f0f0, #e0e0e0);
+  margin: 0;
+  padding: 20px;
+}*/
+#section2 {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 2px solid #333;
+  padding: 40px;
+  margin: 0px auto;
+  max-width: 100%; /* Responsive max width */
+  /*background: white; /* Background for the container */
+  border: hidden;
+  color: black;
+  background-color:#e6e6e6;
+}
+.sectiontext { 
+  padding: 5px;
+  margin: 20px 0;
+  transition: transform 0.5s, opacity 0.5s;
+  opacity: 0;
+  transform: translateX(-100px); /* Start from the left */
+}
+.sectiontext.visible {
+  opacity: 1;
+  transform: translateX(0); /* Move to original position */
+}
+h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+p { 
+  font-size: 18px;
 }
