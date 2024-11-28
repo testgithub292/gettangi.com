@@ -233,8 +233,8 @@ body {
 .header-section {
   margin-top: 72px;
   width: 100%;
-  height: 420px;
-  background-image: url(images/DALL·E-2024-11-01-00.28\ \(1\).png);
+  height: 380px;
+  background-image: url(images/WHY_TANGI_TOKEN_IMAGE5.png);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -487,11 +487,11 @@ body {
 }
 
 .glowing-border span {
-  font-size: 60px;
+  font-size: 35px;
   color: #00ffff;
   font-weight: bold;
   text-shadow: 0 0 5px #00b3b3, 0 0 10px #008080, 0 0 15px #005757;
-
+text-align: center;
 }
 
 @keyframes gradientAnimation {
@@ -517,31 +517,23 @@ body {
 
 @media screen and (max-width: 768px) {
   .glowing-border {
-    height: 70px;
+    height: 140px !important;
   }
   
   .glowing-border span {
-    font-size: 50px;
+    font-size: 30px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .glowing-border {
-    height: 80px;
-  }
 
-  .glowing-border span {
-    font-size: 40px;
-  }
-}
 
 @media screen and (max-width: 475px) {
   .glowing-border {
-    height: 80px;
+    height: 100px !important;
   }
 
   .glowing-border span {
-    font-size: 35px;
+    font-size: 25px;
   }
 }
 /*body, html {
