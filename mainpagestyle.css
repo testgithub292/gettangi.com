@@ -263,6 +263,7 @@ body {
   font-size: 1.3em;
   line-height: 1.5;
   animation: slideIn 1s ease-in;
+  font-weight: 500;
 }
 
 @keyframes fadeIn {
@@ -285,6 +286,7 @@ body {
  .sub-content{
   margin-top: 160px;
   font-size: 1.5em;
+
  }
 
   .logo {
@@ -306,7 +308,9 @@ body {
    .sub-content{
     font-size: 20px;
     text-align: center;
-    margin-top: 180px;
+    margin-top: 200px;
+ 
+  
    }
    .content-wrapper {
     position: absolute;
@@ -322,8 +326,9 @@ body {
    }
 
    .sub-content{
-    font-size: 1em;
-    text-align: center;
+    font-size: 1.4em;
+    text-shadow: 0 0 5px #00b3b3, 0 0 10px #008080, 0 0 15px #005757;
+    
    }
 }
 
@@ -333,8 +338,9 @@ body {
    }
 
    .sub-content{
-    font-size: 1em;
+    font-size: 1.4em;
     text-align: center;
+
    }
 }
 /*#bg_img_first{
