@@ -48,6 +48,15 @@
   .nav-link.dropdown-toggle::after {
       display: none;
   }
+
+
+  .bytokenbtnnav2{
+    display: none !important;
+ }
+
+.bytokenbtnnav{
+  margin-right: 15px !important;
+}
   #contact_bt_css{
     height: fit-content;
    padding-top: 3px;
@@ -103,11 +112,16 @@
   
  
   
-  @media (max-width: 992px) {
+  @media (max-width: 1200px) {
   
       .navbar-toggler {
          color: white !important;
         }
+
+        .bytokenbtnnav2{
+          display: block !important;
+          margin-top: 0px !important;
+      }
   }
 
   /* Hide the submenu by default */
