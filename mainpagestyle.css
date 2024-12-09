@@ -474,27 +474,27 @@ body {
 .glowing-border {
   height: 140px;
   width: 100%;
-  border-radius: 10px;
-  border: 2px solid transparent;
   
+  border: 2px solid transparent;
+  background: linear-gradient(to right, #d9caa8, #c8ae8e);
   background-size: 200% 200%;
   animation: gradientAnimation 5s ease infinite;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  transition: all 0.3s ease;
+  
 }
 
 .glowing-border span {
   font-size: 35px;
-  color: #00ffff;
+  /*color: #00ffff;*/
   font-weight: bold;
-  text-shadow: 0 0 5px #00b3b3, 0 0 10px #008080, 0 0 15px #005757;
-text-align: center;
+  /*text-shadow: 0 0 5px #00b3b3, 0 0 10px #008080, 0 0 15px #005757;*/
+   text-align: center;
 }
 
-@keyframes gradientAnimation {
+/*@keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
   }
@@ -504,16 +504,16 @@ text-align: center;
   100% {
     background-position: 0% 50%;
   }
-}
+}*/
 
-@keyframes glowAnimation {
+/*@keyframes glowAnimation {
   from {
     text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
   }
   to {
     text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff, 0 0 30px #ffffff;
   }
-}
+}*/
 
 @media screen and (max-width: 768px) {
   .glowing-border {
@@ -558,14 +558,14 @@ text-align: center;
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(10px);
-  background: rgba(255, 255, 255, 0.2);
+  background: white;
 }
 .glowing-text {
   font-family:'Times New Roman', Times, serif;
   font-size: 20px;
   line-height: 2;
   text-align: left;
-  color: white; /* Dark blue text color */
+  color: black; /* Dark blue text color */
   /*text-shadow: 0 0 10px #66b3ff, 0 0 20px #66b3ff, 0 0 30px #66b3ff;*/
  cursor: pointer;
 }
@@ -681,10 +681,15 @@ text-align: center;
   height: 450px;
   box-shadow: 2px 2px 42px 2px #ddd;
 }
+@media (max-width: 868px) {
+  .section_body{
+    height: 720px;
+  }
+}
 
 @media (max-width: 750px) {
   .section_body{
-    height: 850px;
+    height: 1050px !important;
   }
   .main_body_section {
     display: block;
@@ -733,13 +738,13 @@ text-align: center;
 
 @media (max-width: 530px) {
   .section_body{
-    height: 930px;
+    height: 1090px !important;
   }
 }
 
 @media (max-width: 480px) {
   .section_body{
-    height: 930px !important;
+    height: 1100 !important;
   }
 }
 
@@ -751,45 +756,33 @@ text-align: center;
 
 @media (max-width: 460px) {
   .section_body{
-    height: 930px;
+    height: 1120px !important;
   }
 }
 
 @media (max-width: 423px) {
   .section_body{
-    height: 1020px;
+    height: 1130px !important;
   }
 }
 
 @media (max-width: 407px) {
   .section_body{
-    height: 1010px !important;
+    height: 1170px !important;
   }
 }
 
-@media (max-width: 480px) {
+
+
+
+
+@media (max-width: 392px) {
   .section_body{
-    height: 1010px;
+    height: 1180px !important;
   }
 }
 
-@media (max-width: 470px) {
-  .section_body{
-    height: 1020px;
-  }
-}
 
-@media (max-width: 365px) {
-  .section_body{
-    height: 1030px;
-  }
-}
-
-@media (max-width: 350px) {
-  .section_body{
-    height: 1040px;
-  }
-}
 
 /*  section three  css-----------------------------------------------------------------
 ------------------------------------------------------------------------------------------*/
@@ -1389,179 +1382,14 @@ Generic layout (demo looks)
 }*/
 body {
   background-color: #32496881 !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-font-smoothing: antialiased;
-  -o-font-smoothing: antialiased;
 }
 
-.main {
-  margin: 0 auto;
-  background-color: #32496881 !important;
-}
-
-.cards {
+#section_6{
   display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.cards_item {
-  display: flex;
-  padding: 1rem;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.card_image {
-  max-height: 250px;
-  margin-top: -24px;
-  img {
-    width: 100%;
-    max-width: 800px;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  &:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100px;
-    position: relative;
-    top: -100px;
-    background: linear-gradient(0deg, #0910148c 10%, rgba(0, 0, 0, 0) 100%);
-  }
-}
-
-.card {
-  background-color: #091014;
-  border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-}
-
-.card_content {
-  padding: 1rem;
-  z-index: 1;
+  justify-content: center;
   display: block;
+  max-width: 650px;
 }
-
-.card_title {
-font-family: 'Times New Roman', Times, serif;
-  font-size: 50px;
-  line-height: 72px;
-  margin-top: -50px;
-  margin-bottom: 24px;
-  text-shadow: white;
-  color: black;
-}
-
-.card_text {
-  color: #3d3c36;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 200;
-  font-size: 18px;
-  p {
-    max-width: 800px;
-  }
-}
-
-.card_price {
-  position: relative;
-  top: 10px;
-  right: 16px;
-  text-align: right;
-  color: white;
-  font-family: "Raleway", sans-serif;
-  height: 24px;
-  font-size: 36px;
-  font-weight: 400;
-  text-shadow: black 3px 0px 6px;
-}
-
-#item_fig .card:after {
-  content: "Seasonal";
-  font-family: "Raleway", sans-serif;
-  color: rgba(234, 225, 175, 0.8);
-  font-weight: 600;
-   font-style: italic;
-  text-transform: uppercase;
-  display: block;
-  width: 10ch;
-  height: 1.5em;
-  padding: 0.2em 0.4em;
-  position: relative;
-  bottom: calc(100% - 2.5em);
-  left: 1em;
-}
-
-.video_tangi {
-  border-radius: 10px;
-}
-
-@media (max-width: 600px) {
-  .video_tangi {
-    width: 500px;
-    height: 280px;
-  }
-}
-
-
-@media (max-width: 530px) {
-  .video_tangi {
-    width: 470px;
-    height: 250px;
-  }
-}
-
-@media (max-width: 490px) {
-  .video_tangi {
-    width: 430px;
-    height: 220px;
-  }
-}
-
-@media (max-width: 450px) {
-  .video_tangi {
-    width: 410px;
-    height: 220px;
-  }
-}
-
-@media (max-width: 430px) {
-  .video_tangi {
-    width: 390px;
-    height: 220px;
-  }
-}
-
-@media (max-width: 410px) {
-  .video_tangi {
-    width: 370px;
-    height: 200px;
-  }
-}
-
-@media (max-width: 390px) {
-  .video_tangi {
-    width: 350px;
-    height: 180px;
-  }
-}
-
-@media (max-width: 370px) {
-  .video_tangi {
-    width: 300px;
-    height: 150px;
-  }
-}
-
-
-
 
 
 
