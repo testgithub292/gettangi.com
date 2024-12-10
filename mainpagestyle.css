@@ -5,7 +5,7 @@
   }
   #navbarcolorstyle{
   background-color: #4B0082;
-  }
+  } 
   
   #textstyle{
     font-size: 16px;
@@ -157,15 +157,19 @@
   /* ----------video start-----------------------------------------------------*/
 
     .modal-header{
-      background-color:#32496881;
-      color: white;
+      background-color:white;
+      color: rgb(20, 16, 16);
+      font-family: 'Times New Roman', Times, serif;
     }
     .modal-body{
-      background-color:#32496881;
+      background-color: white;
       height: 430px;
+      font-family: 'Times New Roman', Times, serif !important;
+      font-size: 18px;
+      color: black;
     }
     .modal-footer{
-      background-color:#32496881 !important;
+      background-color: white !important;
     }
     
       /* Make the video responsive */
@@ -234,7 +238,7 @@ body {
   margin-top: 72px;
   width: 100%;
   height: 460px;
-  background-image: url(images/WHY_TANGI_TOKEN_IMAGE6.png);
+  background-image: url(images/WHY_TANGI_TOKEN_IMAGE9.png);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -552,16 +556,19 @@ body {
   display: flex;
   overflow: hidden;
   border: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .text-section {
   flex: 1;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
   backdrop-filter: blur(10px);
   background: white;
+ 
 }
 .glowing-text {
   font-family:'Times New Roman', Times, serif;
@@ -570,7 +577,7 @@ body {
   text-align: left;
   color: black; /* Dark blue text color */
   /*text-shadow: 0 0 10px #66b3ff, 0 0 20px #66b3ff, 0 0 30px #66b3ff;*/
- cursor: pointer;
+
 }
 @keyframes glow {
   from {
@@ -651,8 +658,9 @@ body {
   padding-top: 5px;
   height:650px;
  /* background-color: #4158D0;*/
- background: linear-gradient(to right, #333333c9, #0056b3c9);
-
+ /*background: linear-gradient(to right, #333333c9, #0056b3c9);*/
+padding-left: 10px;
+padding-right: 10px;
 
 }
 .main_body_section {
@@ -665,6 +673,7 @@ body {
   margin: 5% auto;
   font: 500 100%/1.5 system-ui;
   background:#fff;
+  border-radius: 0px 0px 100px 0px;
 }
 .section_heading_css{
   font-size: 50px;
@@ -676,7 +685,7 @@ body {
 .section_text{
   font-size:18px;
   line-height:1.9;
-  
+  font-family: 'Times New Roman', Times, serif !important;
 }
 
 .section_image {
@@ -688,9 +697,10 @@ body {
   .section_body{
     height: 720px;
   }
+  
 }
 
-@media (max-width: 750px) {
+@media (max-width: 885px) {
   .section_body{
     height: 1050px !important;
   }
@@ -1284,6 +1294,7 @@ article img {
 
 .article-body {
   padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 
@@ -1384,7 +1395,8 @@ Generic layout (demo looks)
   box-sizing: border-box;
 }*/
 body {
-  background-color: #32496881 !important;
+  /*background-color: #32496881 !important;*/
+  background-color: #0056b3c9 !important;
 }
 
 #section_6{
