@@ -463,7 +463,7 @@ color: var(--color);
   margin-top: 72px;
 }
 .landing_page * {
-  font-family: Nunito, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .landing_page .responsive-container-block {

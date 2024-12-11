@@ -4,7 +4,7 @@
   }
   #navbarcolorstyle{
   background-color: #4B0082;
-  }
+  } 
   
   #textstyle{
     font-size: 16px;
@@ -470,6 +470,7 @@ color: var(--color);
 }
 
 .content {
+  font-family: 'Times New Roman', Times, serif;
   position: absolute;
   left: 10px; /* Adjust as needed */
   top: 60%;
@@ -589,6 +590,7 @@ h1 {
       text-align: center;
       box-sizing: border-box;
       height: 300px;
+      font-family: 'Times New Roman', Times, serif;
     }
     .card:hover {
       transform: scale(1.05);

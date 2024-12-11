@@ -527,6 +527,7 @@
   background: #eaf6ff;
   padding: 2rem;
   border-radius: 15px;
+  font-family: 'Times New Roman', Times, serif;
 }
 
 h1 {
@@ -567,7 +568,7 @@ h1 {
 
 .time {
   color: #2a2839;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   font-weight: 500;
 
 }
@@ -777,7 +778,7 @@ p {
   padding: 20px;
 }*/
 #section2 {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   border: 2px solid #333;
   padding: 20px;
   margin: 0px auto;
@@ -888,7 +889,7 @@ p {
 .bodyheadertext{
   color: white;
   font-size: 25px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Times New Roman', Times, serif !important;
 }
 
 
@@ -980,7 +981,7 @@ p {
   padding: 20px;
 }*/
 #section2 {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   border: 2px solid #333;
   padding: 40px;
   margin: 0px auto;

@@ -571,7 +571,7 @@ color: var(--color);
   padding: 20px;
 }*/
 #section2 {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family:  'Times New Roman', Times, serif;
   border: 2px solid #333;
   padding: 20px;
   margin: 0px auto;
@@ -708,7 +708,7 @@ h1 {
   font-weight: bold;
   text-decoration: underline;
   margin-bottom: 40px;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family:  'Times New Roman', Times, serif;
 }
 .tehproblemhead:hover{
   color: #6111b8;
@@ -832,7 +832,7 @@ h1 {
   padding: 20px;
 }*/
 #section2 {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Times New Roman', Times, serif;
   border: 2px solid #333;
   padding: 20px;
   margin: 0px auto;
