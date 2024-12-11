@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
      // Function to handle intersection
-        const handleIntersection = (entries) => {
+ /* const handleIntersection = (entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     entry.target.classList.add('visible'); // Add visible class to trigger animation
@@ -99,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         // Observe the heading and content
         observer.observe(document.getElementById('heading_section3'));
-        observer.observe(document.getElementById('content_section3'));
+        observer.observe(document.getElementById('content_section3'));*/
 
 
 
@@ -113,5 +113,27 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 
+  
+  // animation text
+
+  // Function to handle the intersection observer
+  const sections = document.querySelectorAll('.section');
+  const options = {
+      root: null, // Use the viewport as the container
+      threshold: 0.1 // Trigger when 10% of the section is visible
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target); // Stop observing once it becomes visible
+          }
+      });
+  }, options);
+
+  sections.forEach(section => {
+      observer.observe(section); // Observe each section
+  });
 
  

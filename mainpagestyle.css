@@ -571,8 +571,8 @@ body {
  
 }
 .glowing-text {
-  font-family:'Times New Roman', Times, serif;
-  font-size: 20px;
+  font-family:'Times New Roman', Times, serif !important;
+  font-size: 16px;
   line-height: 2;
   text-align: left;
   color: black; /* Dark blue text color */
@@ -655,10 +655,10 @@ body {
 
 
 .section_body{
-  padding-top: 5px;
-  height: 900px;
+  
+  height: 660px;
  /* background-color: #4158D0;*/
- /*background: linear-gradient(to right, #333333c9, #0056b3c9);*/
+ /* background: linear-gradient(to right, #333333c9, #0056b3c9);*/
 padding-left: 10px;
 padding-right: 10px;
 
@@ -671,14 +671,12 @@ padding-right: 10px;
   align-items: center;
   max-width: 1100px;
   margin: 5% auto;
-  font: 500 100%/1.5 system-ui;
+  font-family: 'Times New Roman', Times, serif;
   background:#fff;
   border-radius: 0px 0px 100px 0px;
 }
 .section_heading_css{
-  font-size: 50px;
-  font-weight:700;
-  font-family:'Times New Roman', Times, serif;
+  font-family:'Times New Roman', Times, serif !important;
   line-height: 1.2;
   color:#000000;
 }
@@ -693,10 +691,33 @@ padding-right: 10px;
   height: 100%;
   box-shadow: 2px 2px 42px 2px #ddd;
 }
+@media (max-width: 1050px) {
+  .section_body{
+    height: 680px;
+  }
+}
 
+@media (max-width: 1012px) {
+  .section_body{
+    height: 700px;
+  }
+}
+
+
+@media (max-width: 977px) {
+  .section_body{
+    height: 720px;
+  }
+}
+
+@media (max-width: 935px) {
+  .section_body{
+    height: 740px;
+  }
+}
 @media (max-width: 885px) {
   .section_body{
-    height: 1510px;
+    height: 1420px;
   }
   .main_body_section {
     display: block;
@@ -725,43 +746,101 @@ padding-right: 10px;
   }
 }
 
-@media (max-width: 750px) {
-  .section_body{
-    height: 1520px;
-  }
-}
-
-@media (max-width: 635px) {
-  .section_body{
-    height: 1540px;
-  }
-}
-
-@media (max-width: 540px) {
+@media (max-width: 865px) {
   .section_body{
     height: 1400px;
   }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 800px) {
   .section_body{
-    height: 1400px;
+    height: 1370px;
   }
 }
-
-@media (max-width: 480px) {
-  .section_body{
-    height: 1400px;
-  }
-}
-
-@media (max-width: 470px) {
+@media (max-width: 778px) {
   
+  .section_body{
+    height: 1350px;
+  }
+}
+@media (max-width: 750px) {
+  
+  .section_body{
+    height: 1320px;
+  }
+}
+@media (max-width: 670px) {
+  
+  .section_body{
+    height: 1300px;
+  }
 }
 
-@media (max-width: 440px) {
+@media (max-width: 630px) {
+  
   .section_body{
-    height: 1500px;
+    height: 1280px;
+  }
+}
+@media (max-width: 600px) {
+  
+  .section_body{
+    height: 1270px;
+  }
+}
+@media (max-width: 570px) {
+  
+  .section_body{
+    height: 1250px;
+  }
+}
+@media (max-width: 542px) {
+  
+  .section_body{
+    height: 1250px;
+  }
+}
+@media (max-width: 520px) {
+  
+  .section_body{
+    height: 1220px;
+  }
+}
+@media (max-width: 505px) {
+  
+  .section_body{
+    height: 1200px;
+  }
+}
+@media (max-width: 485px) {
+  
+  .section_body{
+    height: 1250px;
+  }
+}
+@media (max-width: 410px) {
+  
+  .section_body{
+    height: 1310px;
+  }
+}
+@media (max-width: 375px) {
+  
+  .section_body{
+    height: 1310px;
+  }
+}
+@media (max-width: 362px) {
+  
+  .section_body{
+    height: 1320px;
+  }
+}
+
+@media (max-width: 350px) {
+  
+  .section_body{
+    height: 1430px;
   }
 }
 
@@ -770,16 +849,26 @@ padding-right: 10px;
 
 
 
-@media (max-width: 392px) {
-  .section_body{
-    height: 1520px;
-  }
+/* section 2 ------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------------*/
+
+
+
+.section { 
+  font-family: 'Times New Roman', Times, serif !important;
+  transition: transform 0.5s, opacity 0.5s;
+  opacity: 0;
+  transform: translateX(-100px); /* Start from the left */
 }
-@media (max-width: 370px) {
-  .section_body{
-    height: 1550px;
-  }
+.section.visible {
+  opacity: 1;
+  transform: translateX(0); /* Move to original position */
 }
+
+
+
+
+
 
 
 /*  section three  css-----------------------------------------------------------------
@@ -1257,7 +1346,7 @@ article a::after {
 article h2 {
   margin: 0 0 18px 0;
   font-family:'Times New Roman', Times, serif;
-  font-size: 1.9rem;
+  font-size: 1.9rem; 
   letter-spacing: 0.06em;
   color: var(--title-color);
   transition: color 0.3s ease-out;
@@ -1380,8 +1469,8 @@ Generic layout (demo looks)
   box-sizing: border-box;
 }*/
 body {
-  /*background-color: #32496881 !important;*/
-  background-color: #0056b3c9 !important;
+  background-color: #32496881 !important;
+  /* background-color: #0056b3c9 !important;*/
 }
 
 #section_6{
