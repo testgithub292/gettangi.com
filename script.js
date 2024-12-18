@@ -138,5 +138,49 @@ document.addEventListener("DOMContentLoaded", function() {
 
  
 
-// marqueee script
+// card script
 
+let lastScrollTop = 0; // Last scroll position
+let animationTriggered = false; // Flag to track if animation has been triggered
+
+window.addEventListener('scroll', function() {
+    const card = document.getElementById('myCard');
+    const cardPosition = card.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+
+    // Get current scroll position
+    const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+    // Check if the card is in the viewport and scroll direction is down
+    if (cardPosition < windowHeight && cardPosition > 0 && currentScrollTop > lastScrollTop && !animationTriggered) {
+        card.classList.add('visible');
+        animationTriggered = true; // Set flag to true after animation is triggered
+    }
+
+    // Reset the flag if the card is not in the viewport
+    if (cardPosition > windowHeight || cardPosition < 0) {
+        animationTriggered = false; // Reset flag when card is out of view
+    }
+
+    // Update last scroll position
+    lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // For Mobile or negative scrolling
+});
+
+/*-----------------------------------------------------*/
+
+const words = document.querySelectorAll('.word');
+
+// Rename the observer to avoid conflict
+const wordsObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('animate');
+        } else {
+            entry.target.classList.remove('animate');
+        }
+    });
+});
+
+words.forEach(word => {
+    wordsObserver.observe(word); // Use wordsObserver instead of observer
+});

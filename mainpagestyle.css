@@ -2180,3 +2180,57 @@ html, body {
 
 
 
+/*---------------------------------------------*/
+
+.card.visible {
+  opacity: 1; /* Make visible */
+  transform: scale(1); /* Scale to normal */
+}
+.card-header{
+  background-color:lavender !important;
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+}
+
+.card {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 10px;
+  transition: transform 0.5s ease;
+  opacity: 0; /* Initially hidden */
+  transform: scale(0.5); /* Initially scaled down */
+   /* Card ko relative position diya gaya */
+   /* Content overflow ko chhupane ke liye */
+}
+
+
+/*------------------------------------------------*/
+.word {
+  position: relative;
+  white-space: nowrap;
+  color: white;
+ 
+}
+
+.word::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: black;
+  overflow: hidden;
+  width: 0;
+  transition: width 3s linear;
+  text-shadow: 0 0 3px rgba(255,255,255,1); 
+}
+
+.word.animate::after {
+  width: 100%;
+}
+
+@keyframes run-text {
+  from { width: 0 }
+  to { width: 100% }
+}
