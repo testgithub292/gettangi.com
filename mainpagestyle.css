@@ -2234,3 +2234,9 @@ html, body {
   from { width: 0 }
   to { width: 100% }
 }
+
+/*--------------------------------------------------*/
+
+.custom-list-item::marker {
+  color: darkorange; /* Change the bullet point color */
+}
