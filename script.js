@@ -184,3 +184,30 @@ const wordsObserver = new IntersectionObserver((entries) => {
 words.forEach(word => {
     wordsObserver.observe(word); // Use wordsObserver instead of observer
 });
+
+
+
+//---------------------------------------------------------------
+
+const cards = document.querySelectorAll('.boxes_item');
+
+const scrollobserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+        } else {
+            entry.target.classList.remove('show'); // Remove for repeated animations
+        }
+    });
+}, {
+    threshold: 0.5 // 50% of the card must be visible
+});
+
+cards.forEach(card => scrollobserver.observe(card));
+
+
+//--------------------------------------------------------------------
+
+
+
+
